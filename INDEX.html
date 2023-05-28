@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>
+        Simple web Development Template
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+     
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+     
+        .background {
+            background: rgb(69, 69, 69);
+            background-blend-mode: darken;
+            background-size: cover;
+        }  
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+     
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+     
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+     
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+     
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+     
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+     
+        .nav-list li a:hover {
+            color: grey;
+        }
+     
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+     
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }        .firstsection {
+            background-color: green;
+            height: 400px;
+        }
+     
+        .secondsection {
+            background-color: blue;
+            height: 400px;
+        }
+     
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+     
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+     
+        .secondhalf {
+            width: 30%;
+        }
+     
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+     
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+     
+        .text-small {
+            font-size: 18px;
+            color: #f3f7fa;
+        }
+     
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+     
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+     
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+     
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+     
+        .paras {
+            padding: 0px 65px;
+        }
+     
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+     
+        .center {
+            text-align: center;
+        }
+     
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+ 
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="d-1.png">
+            </div>
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#course">Courses</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+ 
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    Web Technology
+                </h1>
+                 
+                <p class="text-small ">
+                    HTML waxay u taagan tahay HyperText Markup
+                    Luuqad Waxaa loo isticmaalaa in lagu naqshadeeyo
+                    boggaga internetka oo isticmaalaya luqad calaamadayn ah.
+                    HTML waa isku dhafka Hypertext
+                    iyo luqadda Markup. Hypertext
+                    qeexaya isku xirka shabakada
+                    bogag Luuqad calaamadeyn ah ayaa la adeegsadaa
+                    si loo qeexo qoraalka qoraalka dhexdiisa
+                    tag kaas oo qeexaya qaab-dhismeedka
+                    bogagga shabakadda. HTML waa luuqad calaamadeysan
+                    kaas oo loo isticmaalo browser-ku
+                    wax ka beddel qoraalka, sawirada, iyo kuwa kale
+                    ka kooban si ay u muujiyaan in loo baahan yahay
+                    qaab.
+                </p>
+               
+            </div>
+            <video width="400" height="350" controls>
+                <source src="Discover Synthesia in 4 minutes _ Product Tour.mp4" type="video/mp4">
+            
+              Your browser does not support the video tag.
+              </video>
+
+        </div>
+    </section>
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondHalf">
+                <h1 class="text-big" id="program">
+                    C Programming
+                </h1>
+                <p class="text-small ">
+                    C waa luqadda barnaamijka.
+                    Markii hore waxaa soo saaray Dennis
+                    Ritchie sida barnaamij habaysan
+                    luqadda lagu qoro nidaamka hawlgalka.
+                    Tilmaamaha ugu muhiimsan ee luqadda C waxaa ka mid ah
+                    heerka hoose ee helitaanka xusuusta, set fudud
+                    ereyada muhiimka ah, iyo qaab nadiif ah, kuwan
+                    Tilmaamo ka dhigaya luqadda C ku habboon
+                    barnaamijyada nidaamka sida nidaamka hawlgalka
+                    ama horumarinta isku-darka.
+                </p>
+ 
+ 
+            </div>
+            <audio controls>
+                <source src="Discover Synthesia in 4 minutes _ Product Tour.mp4" type="audio/ogg">
+            
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+    </section>
+ 
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java</h1>
+ 
+            <p class="sectionSubTag text-small " style="color: blue;">
+                Java waa mid ka mid ah kuwa ugu caansan
+                luqadda barnaamijyada caanka ah
+                sanado badan. Java waa Shay
+                Hanuunsan. Si kastaba ha ahaatee ma aha
+                loo tixgaliyey sidii shayga saafiga ah u janjeedha
+                sida ay u bixiso taageerada asaasiga ah
+                noocyada xogta (sida int, char, iwm) The
+                Koodhadhka Java ayaa marka hore lagu soo ururiyey byte
+                code (mashiinka madax banaan code). Markaa
+                code byte waxa uu ku shaqeeya Java Virtual
+                Mashiinka (JVM) iyada oo aan loo eegin
+                dhismaha hoose.
+            </p>
+ 
+ 
+        </div>
+       
+ 
+        <div class="thumbnail">
+            <img src="pexels-karolina-grabowska-8092507.jpg" alt="laptop image">
+            
+
+        </div>
+    </section>
+ 
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights by Ridwan Ahmed
+        </p>
+ 
+ 
+    </footer>
+</body>
+ 
+</html>
